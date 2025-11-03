@@ -64,13 +64,13 @@ class CustomUser1(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
 
-    def get_full_name(self):
+    def get_full_name22222(self):
         return f"{self.first_name} {self.last_name}".strip()
 
-    def get_short_name(self):
+    def get_short_name22222(self):
         return self.first_name or self.email
 
-    def email_user(self, subject, message, from_email=None, **kwargs):
+    def email_user22222(self, subject, message, from_email=None, **kwargs):
         """Send an email to this user. Stub for demo purposes."""
         # In a real project, use django.core.mail.send_mail
         print(f"Sending email to {self.email}: {subject}\n{message}")
